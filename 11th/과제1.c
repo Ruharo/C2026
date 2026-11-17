@@ -6,12 +6,11 @@ int main(void) {
     char str[100];
     int count = 0;
 
-    printf("¿µ¹® ¹®ÀåÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
+    printf("ì˜ë¬¸ ë¬¸ìž¥ì„ ìž…ë ¥í•˜ì‹œì˜¤: ");
     if(fgets(str, sizeof(str), stdin) == NULL) {
         return 1;
     }
     str[strcspn(str, "\n")] = 0;
-
     for (char *p = str; *p != '\0'; p++) {
         if (*p >= 'a' && *p <= 'z') {
             *p = *p - 'a' + 'A';
@@ -22,6 +21,6 @@ int main(void) {
         }
     }
 
-    printf("´ë¹®ÀÚ : %s\n", str);
-    printf("±ÛÀÚ ¼ö (°ø¹é Á¦¿Ü): %d\n", count);
+    printf("ëŒ€ë¬¸ìž : %s\n", str);
+    printf("ê¸€ìž ìˆ˜ (ê³µë°± ì œì™¸): %d\n", count);
 }
