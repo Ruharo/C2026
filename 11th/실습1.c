@@ -6,7 +6,7 @@ int main(void) {
     char str[100];
     int count = 0;
 
-    printf("ì˜ë¬¸ ë¬¸ì¥ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+    printf("¿µ¹® ¹®ÀåÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
     if(fgets(str, sizeof(str), stdin) == NULL) {
         return 1;
     }
@@ -21,6 +21,6 @@ int main(void) {
         }
     }
 
-    printf("ëŒ€ë¬¸ì : %s\n", str);
-    printf("ê¸€ì ìˆ˜ (ê³µë°± ì œì™¸): %d\n", count);
+    printf("´ë¹®ÀÚ : %s\n", str);
+    printf("±ÛÀÚ ¼ö (°ø¹é Á¦¿Ü): %d\n", count);
 }
